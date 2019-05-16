@@ -1,6 +1,7 @@
 package com.wyait.manage.dao;
 
 import com.wyait.manage.pojo.RolePermissionKey;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -13,5 +14,5 @@ public interface RolePermissionMapper {
 
     int insertSelective(RolePermissionKey record);
 
-	List<RolePermissionKey> findByRole(int roleId);
+    List<RolePermissionKey> findByRole(int roleId);
 }

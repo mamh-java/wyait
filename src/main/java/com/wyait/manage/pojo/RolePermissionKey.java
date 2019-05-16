@@ -21,7 +21,8 @@ public class RolePermissionKey {
         this.roleId = roleId;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "RolePermissionKey{" + "permitId=" + permitId + ", roleId="
                 + roleId + '}';
     }

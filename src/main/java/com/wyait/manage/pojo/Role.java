@@ -73,7 +73,8 @@ public class Role {
         this.updateTime = updateTime;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "Role{" + "id=" + id + ", roleName='" + roleName + '\''
                 + ", descpt='" + descpt + '\'' + ", code='" + code + '\''
                 + ", insertUid=" + insertUid + ", insertTime=" + insertTime

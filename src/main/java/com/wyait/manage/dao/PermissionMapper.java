@@ -2,6 +2,7 @@ package com.wyait.manage.dao;
 
 import com.wyait.manage.entity.PermissionVO;
 import com.wyait.manage.pojo.Permission;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -22,29 +23,33 @@ public interface PermissionMapper {
 
     /**
      * 查找所有权限数据
+     *
      * @return
      */
-	List<Permission> findAll();
+    List<Permission> findAll();
 
-	/**
-	 * 查找所有子节点
-	 * @param pid
-	 * @return
-	 */
-	List<Permission> findChildPerm(int pid);
+    /**
+     * 查找所有子节点
+     *
+     * @param pid
+     * @return
+     */
+    List<Permission> findChildPerm(int pid);
 
-	/**
-	 * 查询权限树列表
-	 * @return
-	 */
-	List<PermissionVO> findPerms();
+    /**
+     * 查询权限树列表
+     *
+     * @return
+     */
+    List<PermissionVO> findPerms();
 
-	/**
-	 * 根据角色id获取权限数据
-	 * @param roleId
-	 * @return
-	 */
-	List<Permission> findPermsByRole(Integer roleId);
+    /**
+     * 根据角色id获取权限数据
+     *
+     * @param roleId
+     * @return
+     */
+    List<Permission> findPermsByRole(Integer roleId);
 
-	List<PermissionVO> getUserPerms(Integer userId);
+    List<PermissionVO> getUserPerms(Integer userId);
 }

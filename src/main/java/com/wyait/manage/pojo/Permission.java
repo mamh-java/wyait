@@ -113,7 +113,8 @@ public class Permission {
         this.updateTime = updateTime;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "Permission{" + "id=" + id + ", name='" + name + '\'' + ", pid="
                 + pid + ", zindex=" + zindex + ", istype=" + istype
                 + ", descpt='" + descpt + '\'' + ", code='" + code + '\''

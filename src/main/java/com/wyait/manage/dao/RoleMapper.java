@@ -2,6 +2,7 @@ package com.wyait.manage.dao;
 
 import com.wyait.manage.entity.RoleVO;
 import com.wyait.manage.pojo.Role;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -22,24 +23,27 @@ public interface RoleMapper {
 
     /**
      * 分页查询所有的角色列表
+     *
      * @return
      */
-	List<Role> findList();
+    List<Role> findList();
 
-	/**
-	 * 获取角色相关的数据
-	 * @param id
-	 * @return
-	 */
-	RoleVO findRoleAndPerms(Integer id);
+    /**
+     * 获取角色相关的数据
+     *
+     * @param id
+     * @return
+     */
+    RoleVO findRoleAndPerms(Integer id);
 
-	/**
-	 * 根据用户id获取角色数据
-	 * @param userId
-	 * @return
-	 */
-	List<Role> getRoleByUserId(Integer userId);
+    /**
+     * 根据用户id获取角色数据
+     *
+     * @param userId
+     * @return
+     */
+    List<Role> getRoleByUserId(Integer userId);
 
-	List<Role> getRoles();
+    List<Role> getRoles();
 
 }

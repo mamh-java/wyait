@@ -21,7 +21,8 @@ public class UserRoleKey {
         this.roleId = roleId;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "UserRoleKey{" + "userId=" + userId + ", roleId=" + roleId + '}';
     }
 }
